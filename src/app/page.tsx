@@ -1,27 +1,22 @@
 import { Experience } from "./components/experience/experience";
 import { Header } from "./components/header/header";
+import { EmailIcon } from "./components/icons/email-icon";
+import { Info } from "./components/information/information";
 import "./styles/home.scss";
+import { SocialBtns } from "./components/social-btns/social-btns";
 
 export default function Home() {
 	return (
 		<main className="container">
 			<Header />
 			<Experience />
-			<div className="infos">
-				<h3 className="languages"></h3>
-				<div className="languages-info">
-					<span>En - Fluent</span>
-					<span>Pt - Native Speaker</span>
-				</div>
-				<h3>Education</h3>
-				<div className="educational-info">
-					<span>🎓</span>
-					<span>Engenharia informática - Instituto politécnico de Setúbal</span>
-				</div>
-			</div>
+			<Info />
 			<div className="buttons">
-				<div className="social"></div>
-				<button>contact me</button>
+				<SocialBtns />
+				<a className="primary-btn" href="mailto:irus0ubusiness@gmail.com">
+					contact me
+					<EmailIcon />
+				</a>
 			</div>
 		</main>
 	);
