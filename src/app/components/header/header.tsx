@@ -11,7 +11,7 @@ export function Header() {
 			<Image
 				src="/eu.jpg"
 				alt="Vercel Logo"
-				width={325}
+				width={270}
 				height={250}
 				priority
 			/>
