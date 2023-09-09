@@ -1,0 +1,50 @@
+.experience-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+
+	// img {
+	// 	filter: grayscale(100%);
+	// }
+
+	.experience-unit {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 300px;
+		height: 30px;
+		border-radius: 24px;
+		border: 1px solid var(--text-secondary);
+
+		.experience-measure {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 24px;
+			height: 30px;
+			border: 1px solid linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
+			background: linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
+
+			color: var(--text-primary);
+			font-weight: 300;
+			text-align: center;
+			font-size: 14px;
+
+			&.measure-1 {
+				width: 33.3%;
+				z-index: -2;
+			}
+
+			&.measure-2 {
+				width: 66.6%;
+				z-index: -2;
+			}
+
+			&.measure-3 {
+				width: 100%;
+				z-index: -2;
+			}
+		}
+	}
+}
